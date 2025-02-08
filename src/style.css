@@ -7,24 +7,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  width: 100%;
+  min-height: 90vh;
   margin: 0;
   padding: 20px;
 }
 
 /* Chat Container */
 .chat-container {
-
   background: rgba(30, 30, 30, 0.9);
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.3);
   display: flex;
   flex-direction: column;
-  height: 500px;
-  width: 800px;
- 
-  margin:50px;
+  height: 80vh;
+  width: 700px;
+  max-width: 800px;
+  margin: auto;
 }
 
 /* Header */
@@ -130,87 +130,60 @@ button:disabled {
   margin-top: 10px;
 }
 
-
-/* Responsive Design */
-@media (max-width: 850px) {
-  .chat-container {
-    width: 350px;
-    height: 80vh;
-    margin: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .chat-container {
-    width: 300px
-    
-    margin: 20px;
-    padding: 15px;
-  }
-
-  .header {
-    font-size: 18px;
-  }
-
-  .chat-box {
-    padding: 10px;
-  }
-
-  .message {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  input {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  button {
-    font-size: 14px;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 400px) {
-  .chat-container {
-    padding: 10px;
-  }
-
-  .header {
-    font-size: 16px;
-  }
-
-  input {
-    font-size: 13px;
-    padding: 8px;
-  }
-
-  button {
-    font-size: 13px;
-    padding: 8px;
-  }
-}
-
-.h1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
+/* Social Icons */
 .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 35px;
-  margin-top: 20px;
- 
-  border-radius: 10px;
-  padding: 10px;
+  gap: 25px;
+  margin-top: 70px;
 }
 
-.icons {
-  color: #ffffff;
-  font-size: 34px;
+.social-icons a {
+  color: #FFD700;
+  font-size: 28px;
   text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #FF9933;
+  transform: scale(1.1);
+}
+
+/* 📱 Responsive Design for Mobile */
+@media (max-width: 600px) {
+  .chat-container {
+    width: 90%;
+    /* Ensures it's not too wide */
+    max-width: 400px;
+    /* Keeps it reasonable */
+    margin: 40px auto;
+    /* Centers horizontally */
+    padding: 15px;
+  }
+
+  .input-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    /* Ensures elements are centered */
+  }
+
+  .input-container input {
+    flex: 1;
+    /* Takes up available space */
+    min-width: 0;
+    /* Prevents overflow */
+  }
+
+  .input-container button {
+    flex-shrink: 0;
+    /* Prevents button from shrinking */
+    white-space: nowrap;
+    /* Keeps text inline */
+  }
 }
