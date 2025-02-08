@@ -1,8 +1,34 @@
-# React + Vite
+# TATTVABOT - AI Chatbot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TATTVABOT is an AI-powered chatbot that blends ancient Indian aesthetics with futuristic AI technology. It provides intelligent responses in a user-friendly chat interface.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
+[Chat with TATTVABOT](https://chatbotgapi.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
+- ⚡ **AI-Powered Chat** - Engaging conversations with AI.
+
+- 📱 **Responsive Design** - Fully optimized for mobile and desktop.
+
+- 🔗 **Social Media Links** - Connect via Instagram, GitHub, and LinkedIn.
+
+## 🛠 Tech Stack
+- **Frontend**: React, CSS
+- **Deployment**: Vercel
+
+## 🚀 Installation
+Clone the repository and install dependencies:
+```sh
+npm install
+```
+Start the development server:
+```sh
+npm start
+```
+
+## 📜 License
+MIT License © 2025 Akshay Kocharekar
+
+---
+
+
